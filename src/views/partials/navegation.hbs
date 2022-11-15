@@ -1,0 +1,32 @@
+<nav>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fa-solid fa-bars"></i>
+  </label>
+  <a href="/" class="enlace">
+    <img src="/source/kwlogo1.png" alt="" class="logo-navbar"> <a href="/" class="titulo">APLICACION DE NOTAS</a> 
+  </a>
+  <ul>
+    <li><a href="/" class="active">INICIO</a></li>
+    <li><a href="/faq">FAQ</a></li>
+    {{#if user}}
+    <div class="dropdown">
+      <button class="dropbtn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">NOTAS</button>
+      <div class="dropdown-content">
+        <a href="/notes">Todas las Notas</a>
+        <a href="/notes/add">Agregar Notas</a>
+        <a href="/users/logout">Cerrar Sesion</a>
+      </div>
+    </div>
+    {{else}}
+    <li><a href="/users/signin">INGRESAR</a></li>
+    <li><a href="/users/signup">REGISTRARSE</a></li>
+    {{/if}}
+  </ul>
+
+
+</nav>
+
+<section>
+  
+</section>
